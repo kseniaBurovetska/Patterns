@@ -7,6 +7,7 @@ public class StatePatternInContext {
 
     public static void main(String[] args) {
         Station station = new Radio7();
+
         Radio radio = new Radio();
         radio.setStation(station);
 

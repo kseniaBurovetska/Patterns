@@ -4,7 +4,7 @@ public class StatePatternInStates {
 
     public static void main(String[] args) {
         Human human = new Human();
-        human.setActivity(new Work());
+        //human.setActivity(new Work());
 
         for (int i = 0; i < 15; i++) {
             human.doActivity();
@@ -15,7 +15,7 @@ public class StatePatternInStates {
 
 //Context
 class Human {
-    private Activity activity;
+    private Activity activity = new Work();
 
     void setActivity(Activity activity) {
         this.activity = activity;
